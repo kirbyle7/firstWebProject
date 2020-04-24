@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/* 
+    New Perspectives, 7th Edition, Project Website
+    Style Sheet For Session 2.2 Quick Questions
+    Kirby Le
+    April 23, 2020
+    CSS File
+    session2_2StyleSheet.css
+*/
+
+/* Question 1 */
+footer > address {
+    color: rgb(0, 0, 255);
+}
+
+/*Question 2 */
+h1#top {
+    font-family: 'Century Gothic', Helvetica, sans-serif;
+}
+
+/* Question 4 
+body {
+    font-size: 2vw;
+}
+*/
+
+/* Question 5 */
+nav a {
+    text-decoration: none;
+}
+
+/* Question 6 */
+@font-face {
+    font-family: Cantarell;
+    src: url(cantarell.woff) format('woff'),
+         url(cantarell.tff) formal('tff');
+}
+
+br.indent {
+    text-indent: 20px;
+}
+
+/* Question 7 */
+blockquote.Reviews {
+    text-indent: 3em;
+    font-style: italic;
+}
+
+/* Question 8 */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    font-weight: normal;
+}
+
+
+
