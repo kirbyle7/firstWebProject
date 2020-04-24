@@ -16,36 +16,79 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
         <link href="tutorial_styles.css" rel="stylesheet" />
+        <link href="session2_2StyleSheet.css" rel="stylesheet" />
     </head>
 
     <body>
         <article>
-            <h2>Session 2.2 Quick Check</h2>
-            <nav>
+                <h1 id="top">Session 2.2 Quick Check</h1>
+            
                 <ol>
-                    <li>Provide a selector to match all address elements that are direct children of the
-                            footer element.</li>
-                    <li>The initial h1 heading in a document has the ID top. Provide a style rule to display
-                            the text of this h1 heading in Century Gothic, Helvetica, or a sans-serif font.</li>
-                    <li>For the following style rules, what is the font size of the h1 heading in pixels?
-                            body {font-size: 16px;}
-                            body > article {font-size: 0.75em;}
-                            body > article > h1 {font-size: 1.5em;}
-                    </li>
-                    <li>Provide a style rule to set the size of body text to 2% of the viewport width.</li>
-                    <li>Provide a style rule to remove underlining from the hypertext links marked
-                            with the "a" tag and nested within a navigation list.</li>
-                    <li>Provide the @font-face rule to create a web font named Cantarell based on
-                            the font files cantarell.woff and cantarell.ttf.</li>
-                    <li>Provide a style rule to display all blockquote elements belonging to the
-                            Reviews class in italic and indented 3em.</li>
-                    <li>Provide a style rule to horizontally center all h1 through h6 headings and to
-                            display their text with normal weight.</li>
+                        <li>Provide a selector to match all address elements that are direct children of the
+                                footer element.</li>
+                        <li>The initial h1 heading in a document has the ID top. Provide a style rule to display
+                                the text of this h1 heading in Century Gothic, Helvetica, or a sans-serif font.</li>
+                        <li>For the following style rules, what is the font size of the h1 heading in pixels?
+                                body {font-size: 16px;}
+                                body > article {font-size: 0.75em;}
+                                body > article > h1 {font-size: 1.5em;}
+                        </li>
+                        <li>Provide a style rule to set the size of body text to 2% of the viewport width.</li>
+                        <li>Provide a style rule to remove underlining from the hypertext links marked
+                                with the "a" tag and nested within a navigation list.</li>
+                        <li>Provide the @font-face rule to create a web font named Cantarell based on
+                                the font files cantarell.woff and cantarell.ttf.</li>
+                        <li>Provide a style rule to display all blockquote elements belonging to the
+                                Reviews class in italic and indented 3em.</li>
+                        <li>Provide a style rule to horizontally center all h1 through h6 headings and to
+                                display their text with normal weight.</li>
                 </ol>
+        
+        <h3>Question 1</h3>
+        <p>footer > address {color: rgb(0, 0, 255);} </p>
+
+        <h3>Question 2</h3>
+        <p>h1#top {font-family: 'Century Gothic', Helvetica, sans-serif;} </p>
+
+        <h3>Question 3</h3>
+        <p>The font size of the h1 heading will be 18px. </p>
+
+        <h3>Question 4</h3>
+        <p>body {font-size: 2vw;} </p>
+
+        <h3>Question 5</h3>
+        <p>nav a {text-decoration: none;} </p>
+        <nav>
+                <a href="www.exampleurl.com/notrealdonotclick">Not A Real URL</a>
         </nav>
+
+        <h3>Question 6</h3>
+        <p>@font-face {
+                <br />font-family: Cantarell;<br />
+                <br />src: url(cantarell.woff) format('woff'),<br />
+                <br class="indent"/>url(cantarell.tff) formal('tff');<br />
+                }
+        </p>
+
+        <h3>Question 7</h3>
+        <p>blockquote.Reviews {
+                        <br class="indent" />text-indent: 3em;<br />
+                        <br class="indent" />font-style: italic;<br />
+                }
+        </p>
+        <p><blockquote class="Reviews">Testing blockquotes for italtics and indents.</blockquote></p>
+
+        <h3>Question 8</h3>
+        <p>h1, h2, h3, h4, h5, h6 {
+                <br class="indent" />text-align: center;<br />
+                <br class="indent" />font-weight: normal;<br />
+                }
+        </p>
+
         </article>
         <footer>
-			<h4>This Website is Used Entirely for Educational Purposes.</h4>
-		</footer>
+                <address>765 Old Yellow Road <br />Campus City<br /> SR 516766</address>
+		<h4>This Website is Used Entirely for Educational Purposes.</h4>
+	</footer>
     </body>
 </html>
