@@ -1,0 +1,109 @@
+<!doctype html>
+
+<!--
+    Questions for Tutorial 2 of New Perspectives, 7th Ed.
+    Kirby Le
+    April 21, 2020
+    HTML File
+    tutorial2Questions_1.html
+-->
+<html>
+    <head>
+         <title>Tutorial 2.1 Questions</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+         <meta charset="utf-8" />
+         <link href="tutorial2_colors.css" rel="stylesheet" />
+         <link href="tutorial_styles.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header>
+            <h2>Session 2.1 Quick Check</h2>
+        </header>
+        <article>
+            <ol>
+                <li>What are inline styles, embedded styles, and external style sheets? Which
+                    would you use to define a design for an entire web site?</li>
+                <li>What keyword do you add to a style property to override style precedence and
+                    style inheritance?</li>
+                <li>Provide the code to enter the style comment “Tri and Succeed Sports Color
+                    Styles“.</li>
+                <li>Provide the style rule to display block quote text in red using an RGB triplet.</li>
+                <li>The color chartreuse is located at 90° on the color wheel with 100% saturation
+                    and 50% lightness. Provide a style rule to display address text in black with
+                    chartreuse as the background color.</li>
+                <li>What is progressive enhancement?</li>
+                <li>
+                    Based on the following style rule for paragraph text, which style property will
+                    be used by an older browser that supports only CSS2?
+                    p { color: rgb(232, 121, 50); color: (hsl23, 80%, 55%, 0.75); }    
+                </li>
+                <li>Provide a style rule to display h1 and h2 headings with a background color of
+                    yellow (an equal mixture of red and green at highest intensity with no blue) at
+                    70% opacity.</li>
+            </ol>
+            <h3>Question 1</h3>
+            <p>Inline styles are style rules written as attributes inside an element. Due to this, 
+                the style rule only applies to a single element.</p>
+            <p>Embedded styles are style rules written inside the head of an HTML document using the 
+                "style" tag. These rules will only apply to the document it is written in.</p>
+            <p>External style sheets are style rules written inside a CSS file and then linked to the HTML 
+                document. External style sheets can be applied to many different web pages which allows
+                the programmer to make changes to many web pages by editing a single CSS file. 
+
+            <h3>Question 2</h3>
+            <p>!important</p>
+
+            <h3>Question 3</h3>
+            <p>/*Tri and Succeed Sports Color Styles*/</p>
+
+            <h3>Question 4</h3>
+            <p>blockquote {
+                color: red;
+            }
+            </p>
+            <p>
+                <blockquote>
+                    The blockquote tag specifies a section that is quoted from another source.
+                </blockquote>
+            </p>
+
+            <h3>Question 5</h3>
+            <p>address {
+                color: black;
+                background-color: hsl(90, 100%, 50%);
+            }
+            </p>
+            <address>123 Yard Fish Drive, <br />Imagine City<br /> GG 567443</address>
+
+            <h3>Question 6</h3>
+            <p>Progressive enhancement is the process of writing code from older versions of a 
+                programming language before code from more recent versions. Consequently,
+                the older code is used by the web browser first and the newer code is used last.
+                This allows older browsers to still run the files properly but also allows browsers that support more recent
+                versions of the language to implement the newer standards and techniques. 
+                
+            </p>
+
+            <h3>Question 7</h3>
+            <p>The older browser would use the color displayed by the rgb(232, 121, 50) color value because the rgb
+                color value is supported by older versions of CSS whereas the hsl color value comes from more recent
+                versions of CSS and would not be supported by older browsers. Furthermore, the older rgb value is written 
+                before the hsl value and therefore takes advantage of progressive enhancement.
+            </p>
+
+            <h3>Question 8</h3>
+            <p>
+                h1, h2 {
+                    background-color: rgba(ff, ff, 00, 0.70);
+                } 
+            </p>
+            <h2>Example 2</h2>
+            <h1>Example 1</h1>
+            
+        </article>
+        <footer>
+			<h4>This Website is Used Entirely for Educational Purposes.</h4>
+		</footer>
+    </body>
+</html>

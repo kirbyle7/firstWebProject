@@ -1,0 +1,166 @@
+<!doctype html>
+
+<!--
+    Notes for Tutorial 1 of New Perspectives, 7th Ed.
+    Kirby Le
+    April 14, 2020
+    HTML File
+    tutorial1.html
+-->
+
+<html>
+	<head>
+		<title>Tutorial 1</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8" />
+		<link href="tutorial_styles.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header><h1>Tutorial 1 Notes</h1></header>
+		
+		<nav>
+			<h2>Table of Contents</h2>
+			<ul>
+				<li><a href="#basic1">What are elements, tags, and attributes?</a></li>
+				<li><a href="#basic2">Some basic elements used in HTML5</a></li>
+				<li><a href="#basic3">What is the document type declaration?</a></li>
+				<li><a href="#basic4">How to write the document head?</a></li>
+				<li><a href="#basic5">How to write the document body?</a></li>
+				<li><a href="#basic6">How to link a style sheet to an HTML document</a></li>
+			</ul>
+		</nav>
+
+		<article>
+			<div id="basic1">
+			<!-- Notes on elements, tags, and attributes -->
+			<h2>Elements, tags, and attributes in HTML</h2>
+			<p>An element is composed of the opening tags, closing tags, and everything 
+				that lies between those tags.</p>
+			<p>Tags are either opening or closing. They tell you more about the 
+				content that lies b/w the opening and closing tags.
+			<p>Opening tags can contain attributes. They tell us more about the contents 
+				inside the element.</p>
+			<p>An attribute has a name and a value. The two are separated by an equals sign.</p>
+			<p>Example: lang="en-us" (values are encased inside double quotes)</p>
+			<p>Many attributes can only be used on certain elements. Such as only in 
+				head, body, etc. Other can appear on any element such as lang.</p>
+			<p>Most attribute values are fixed meaning that the values are already 
+				determined for that attribute and you have to choose which one to use depending 
+				on what you want.</p>
+			<p>Generally, every HTML document (webpage) will have a head and a body. The head
+				give you information on what the content of the body will contain.</p>
+			<p>The body will contain whatever content you want to display such as new articles,
+				images, videos, etc.</p>
+			</div>
+			
+			<section id="basic2">
+			<!-- Basic Elements Used in HTML -->
+			<h2>Ways to edit the structure of text in HTML files.</h2>
+			<p> <b><i>Structural markup</i></b>: elements you use to describe headings 
+				and paragraphs </p>
+			<p>HTML has six levels of headers (h1-h6) with h1 being the largest and h6 being 
+				the smallest.</p>
+			<p>Use the "b" <b>element to make text bold</b>.</p>
+			<p>Use the "i" <i>element to make text into italics</i>.</p>
+			<p>Use the "sup" element to make text into superscript.
+				Today is April 13<sup>th</sup>.</p>
+			<p>Use the "sub" element to make text into subscript. CO<sub>2</sub>.</p>
+			<p>Use the "br /" element to line break inside the middle of a paragraph. I am 
+				going to <br /> try and line break now.<br /></p>
+			<p>Use the "hr /" element to add horizontal rules or borders between sections.</p>
+			<p>The "hr /" element is an example of an <i>empty element </i> which is an element 
+				that does not have any words between the opening and closing tags.</p>
+			<p>An <i>empty element</i> usually has only one tag.</p>
+			
+			<p><b><i>Semantic markup</i></b>: elements you use to provide extra information
+				about headings and paragraphs</p>
+			<p>Semantic markups do not change the structure of your text but simply provides 
+				more information about the text such as whether part text has a strong empahsis 
+				or is actually a quote.</p>
+			</section>
+			
+			<section id="basic3">
+			<!-- Document type declaration -->
+			<h2>What is a document type declaration?</h2>
+			<p>In HTML5, empty elements are elements that are nontextual or contain directions 
+				on how a page should be formated.</p>
+			<p>For instance, images do not contain text and are considered empty elements. 
+				Break lines, "br /" are also considered empty elements.</p>
+			<p>Empty elements are entered using one-sided tag which means they are simply 
+				written using either one opening tag OR one closing tag. Usually we use the 
+				closing tag format. "element /" </p>
+			<p>HTML files always start with a document type declaration which tells the web 
+				browser which markup language to use.</p>
+			<p>Each markup language (HTML5, XHTML2.0, HTML4.01, etc.) has a different 
+				declaration.</p>
+			<p>The document type declaration for HTML5 is "!DOCTYPE html" and is encased inside
+				angular brackets.</p>
+			<p>The doctype is followed by the html element, then the head element, and finally 
+				the body element. Each of these elements have starting and ending tags. 
+				<br /> So the very last tag should always be the closing tag of the html element
+				because the head and the body elements are nested inside the html element.
+				<br /></p>
+			</section>
+			
+			<section id="basic4">
+			<!-- Writing document heads -->
+			<h2>Writing the Document Head</h2>
+			<p>The document head contains "metadata" (not to be confused with the meta tag). 
+				Metadata is information that tells the browser how a document (webpage) should 
+				be processed.</p>
+			<p>The "head" metadata element contain a collection of many metadata elements that 
+				work together to describe the document (webpage) or tells the browser to perform 
+				a certain actions.</p>
+			<p>The "meta" metadata element is used to define keywords, decribe content, and 
+				provide other information to the web browser.</p>
+			<p>The "script" metadata element is used to write Javascript or point to external 
+				script files through the src attribute.<br /> This allows you to control certain 
+				aspects of other elements such as "img" for image manipulation in your document
+				through the use of code<br /></p>
+			<p>The "link" metadata empty element is used to describe the link between a document 
+				(webpage) and an external resource (image, another document, URL, language, etc.)
+				</p>
+			<p>The "style" metadata element is used to provide information (by typing CSS code) 
+				about how an element in a webpage should be rendered by its browser.</p>
+			<p>The "title" metadata element stores the name of the browsertab or title bar.</p>
+			</section>
+			
+			<section id="basic5">
+			<!-- Writing document bodies -->
+			<h2>Writing the Document Body</h2>
+			<p>Section elements: divides major parts of the document into areas such as a header 
+				(opening content that introduces an article or section) , article, footer, 
+				headings, navigation bars, sections, etc.</p>
+			<p>Grouping elements: groups similar content together such as paragraphs, main 
+				content of a document (news articles), figures, quotes, etc.</p>
+			<p>Text-level elements: elements that are contained inside a piece of text such as 
+				"bold", "italicized", "cite", "strong", "em", etc.Also includes "cite" which is
+				used to mark the author or title of a <br />quote or creative work used in your 
+				content and "q" which is used to mark the actual quote coming from the piece 
+				of creativework (books, magazines, websites, etc.).<br /></p>
+			</section>
+			
+			<section id="basic6">
+			<!-- Linking an HTML document to a style sheet (controls how page elements should be displayed) -->
+			<h2>Linking an HTML Document to A Style Sheet</h2>
+			<p><bold>Style sheet</bold>: set of rules that tell the web browser how to display 
+				the elements of a document</p>
+			<p>Linking a HTML document to a style sheet is done using the "link" metadata element
+				and the href (location of linked document) and the rel (relationship b/w html 
+				document and linked document) attributes.
+				<br /><strong>link href="file" rel="stylesheet"</strong><br /></p>
+			<p>To load a style sheet onto an HTML document, BOTH the HTML document and CSS file
+				must be in the same directory (same folder).</p>
+			<p>Blockquote elements MUST be outside of the "p" element. There will be validation 
+				errors if you nest the blockquote inside the paragraph element.
+			</section>
+		</article>
+
+		<footer>
+			<h4>This Website is Used Entirely for Educational Purposes.</h4>
+		</footer>
+	</body>
+
+	
+</html>

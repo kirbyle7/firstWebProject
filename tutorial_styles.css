@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/*
+    New Perspectives 7th Ed.
+    Project Website
+    Kirby Le
+    April 20, 2020
+    CSS File
+    tutorial_styles.css
+*/
+
+/* Body Styles */
+
+html {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+body p {
+    line-height: 20px;
+}
+
+body li {
+    line-height: 20px;
+}
+
+body {
+    font-size: 16px;
+    font-family: Verdana, Geneva, sans-serif;
+
+}
+
+/* Centers the body element */
+body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1020px;
+    min-width: 640px;
+}
+
+body > header {
+	margin: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+
+body > article#about_tss {
+	width: 51%;
+	float: left;
+	margin: 0 3% 0 3%;
+}
+
+
+/* Headings */
+
+footer h4 {
+    text-align: center;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 14px;
+    font-family: Georgia, sans-serif;
+    color: rgba(71, 71, 71, .60);
+    
+}
