@@ -12,7 +12,7 @@
 <html>
 
     <head>
-        <title>New Perspectives 7th Edition Project Website</title>
+        <title>First Web Project: Home</title>
         <meta name="viewport" content="width=width-device, intial-scale=1" />
         <link href="tutorial_styles.css" rel="stylesheet" />
         <meta charset="utf-8" /> 
@@ -20,6 +20,17 @@
 
     <body>
         <header>
+            <nav id="top_nav">
+                <ul>
+                    <li><a href="home_page.html">Home</a></li>
+                    <li><a href="tutorial1.html">Tutorial 1</a></li>
+                    <li><a href="tutorial2.html">Tutorial 2</a></li>
+                        <!-- Tutorial 2 Session Questions go here later. In <ul> list. As a drop down sub-menu -->
+                </ul>
+            </nav>
+        </header>
+
+        <article>
             <h2>What is this website?</h2>
             <p>This webpage was designed by a college student who wanted to practice writing HTML, CSS,
                 and JavaScript code as well as trying to get hands-on experience with web development, from planning, 
@@ -27,10 +38,8 @@
             <p>Below, you will find links directing you to notes this student has taken and questions he has answered
                 over the course of studying from the <i>New Perspectives HTML5 and CSS3: Comprehensive</i>, 
                 7th Edition, textbook written by Patrick Carey.</p>
-        </header>
-        <article>
-            <h3>Links</h3>    
-            <nav>
+            <h2>Links</h2>    
+            <nav id="home_links">
                 <ul>
                     <li><a href="tutorial1.html">Tutorial 1 Notes</a></li>
                     <li><a href="tutorial2.html">Tutorial 2 Notes</a>
@@ -42,9 +51,13 @@
                 </ul>
             </nav>
         </article>
-        <footer>
+
+        <!-- Footer to be added later. Not able to position footer at bottom of page atm.
+        <footer class="edu_footer">
 			<h4>This Website is Used Entirely for Educational Purposes.</h4>
-		</footer>
+        </footer>
+        -->
+
     </body>
 
 </html>

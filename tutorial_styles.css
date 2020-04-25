@@ -9,11 +9,23 @@
     tutorial_styles.css
 */
 
+
+/* Horizontal rule styles */
+
+hr {
+    margin-top: 3px;
+}
+
 /* Body Styles */
 
+html, body {
+    height: 100%;
+}
+
 html {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow-y: scroll; /* Prevents scroll bar from re-positioning web page */
 }
 
 body p {
@@ -27,32 +39,34 @@ body li {
 body {
     font-size: 16px;
     font-family: Verdana, Geneva, sans-serif;
-
 }
-
-/* Centers the body element */
-body {
+    
+body /* Centers the body element */ {
     margin: 0 auto;
     width: 100%;
     max-width: 1020px;
     min-width: 640px;
+    min-height: 100%;
 }
 
 body > header {
 	margin: 0;
-	width: 100%;
+    width: 100%;
 	overflow: hidden;
 }
 
+/* Footer */
 
-body > article#about_tss {
-	width: 51%;
-	float: left;
-	margin: 0 3% 0 3%;
+footer.edu_footer {
+    
 }
 
-
 /* Headings */
+
+h1, h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 
 footer h4 {
     text-align: center;
@@ -61,5 +75,82 @@ footer h4 {
     font-size: 14px;
     font-family: Georgia, sans-serif;
     color: rgba(71, 71, 71, .60);
-    
+}
+
+/* Articles */
+
+
+
+/* Home Links Navigations styles */
+
+nav#home_links > ul > li  a {
+    color: blue;
+    text-decoration: none;
+    line-height: 2em;
+}
+
+nav#home_links > ul > li a:hover {
+    color: rgb(125, 0, 255);
+    text-decoration: underline;
+}
+
+nav#home_links > ul > li {
+    list-style-type: none;
+}
+
+nav#home_links ul ul {
+    color: blue;
+    list-style-type: lower-alpha;
+}
+
+nav#home_links > ul {
+    padding-left: 0px
+}
+
+/* Table of Contents for Tutorial# notes */
+
+nav#table_of_contents > ul > li  a {
+    color: blue;
+    line-height: 2em;
+}
+
+nav#table_of_contents > ul > li a:hover {
+    color: rgb(125, 0, 255);
+    text-decoration: underline;
+}
+
+
+/* Layout for Questions Lists */
+
+ol.question_lists {
+    margin-bottom: 40px;
+}
+
+/* Top navigation menu bar */
+
+nav#top_nav {
+    width: 100%;
+    background-color: rgba(51, 51, 51, 1);
+    overflow: hidden;
+    margin-top: -15px;
+}
+
+nav#top_nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav#top_nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0px;
+}
+
+nav#top_nav a:hover {
+    background-color: lightgray;
+    color:black;
 }

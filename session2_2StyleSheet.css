@@ -10,7 +10,7 @@
 */
 
 /* Question 1 */
-footer > address {
+footer#example_footer > address {
     color: rgb(0, 0, 255);
 }
 

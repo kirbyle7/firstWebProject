@@ -20,10 +20,21 @@
     </head>
 
     <body>
+        <header>
+        <nav id="top_nav">
+                <ul>
+                        <li><a href="home_page.html">Home</a></li>
+                        <li><a href="tutorial1.html">Tutorial 1</a></li>
+                        <li><a href="tutorial2.html">Tutorial 2</a></li>
+                        <!-- Tutorial 2 Session Questions go here later. In <ul> list. As a drop down sub-menu -->
+                </ul>
+                </nav>
+        </header>
+
         <article>
                 <h1 id="top">Session 2.2 Quick Check</h1>
             
-                <ol>
+                <ol class="question_lists">
                         <li>Provide a selector to match all address elements that are direct children of the
                                 footer element.</li>
                         <li>The initial h1 heading in a document has the ID top. Provide a style rule to display
@@ -86,9 +97,15 @@
         </p>
 
         </article>
-        <footer>
+
+        <footer id="example_footer"> 
                 <address>765 Old Yellow Road <br />Campus City<br /> SR 516766</address>
-		<h4>This Website is Used Entirely for Educational Purposes.</h4>
-	</footer>
+        </footer>
+
+         <!-- Footer to be added later. Not able to position footer at bottom of page atm.
+        <footer class="edu_footer">
+			<h4>This Website is Used Entirely for Educational Purposes.</h4>
+        </footer>
+        -->
     </body>
 </html>
