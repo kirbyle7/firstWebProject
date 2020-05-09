@@ -9,6 +9,10 @@
     tutorial_styles.css
 */
 
+/* Indents */
+.indent {
+    text-indent: 70px;
+}
 
 /* Horizontal rule styles */
 
@@ -57,13 +61,11 @@ body > header {
 
 /* Footer */
 
-footer.edu_footer {
-    
-}
+
 
 /* Headings */
 
-h1, h2 {
+h1, h2, h3 {
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -77,6 +79,9 @@ footer h4 {
     color: rgba(71, 71, 71, .60);
 }
 
+.session_heading {
+    text-align: left;
+}
 /* Articles */
 
 
@@ -135,22 +140,32 @@ nav#top_nav {
     margin-top: -15px;
 }
 
-nav#top_nav a {
+nav#top_nav ul {
+    text-align: center;
+    padding-left: 0px;
+}
+
+nav#top_nav ul li {
+    list-style-type: none;
+    float: left;
+    position: relative;
+}
+
+nav#top_nav ul li a {
+    display: block;
     float: left;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 18px;
-}
-
-nav#top_nav ul {
-    list-style-type: none;
-    text-align: center;
-    padding-left: 0px;
+   
 }
 
 nav#top_nav a:hover {
     background-color: lightgray;
     color:black;
 }
+
+
+

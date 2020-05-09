@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*
+    New Perspectives, 7th Ed. Web Project
+    CSS Style Sheet for Session Check 2.3
+    Kirby Le
+    April 25, 2020
+    CSS File
+    session2_3StyleSheet.css
+*/
+
+ul.example_list > li {
+    list-style-type: lower-alpha;
+}
+
+ul.example_list > li {
+    list-style-image: url(star.png);
+    list-style-position: inside;
+}
+
+.indent {
+    text-indent: 70px;
+}

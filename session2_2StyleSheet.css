@@ -15,8 +15,8 @@ footer#example_footer > address {
 }
 
 /*Question 2 */
-h1#top {
-    font-family: 'Century Gothic', Helvetica, sans-serif;
+h1#top {  
+    font-family: 'Century Gothic', Helvetica, sans-serif; /* Answer to question 4. Ignore */
 }
 
 /* Question 4 
@@ -49,7 +49,7 @@ blockquote.Reviews {
 
 /* Question 8 */
 h1, h2, h3, h4, h5, h6 {
-    text-align: center;
+    text-align: left;
     font-weight: normal;
 }
 

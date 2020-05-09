@@ -12,7 +12,7 @@
 <html>
 
     <head>
-        <title>Tutorial 2.2 Questions</title>
+        <title>Session 2.2 Quick Check</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
         <link href="tutorial_styles.css" rel="stylesheet" />
@@ -26,14 +26,14 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="tutorial1.html">Tutorial 1</a></li>
                         <li><a href="tutorial2.html">Tutorial 2</a></li>
+                        <li><a href="tutorial3.html">Tutorial 3</a></li>
                         <!-- Tutorial 2 Session Questions go here later. In <ul> list. As a drop down sub-menu -->
                 </ul>
                 </nav>
         </header>
 
         <article>
-                <h1 id="top">Session 2.2 Quick Check</h1>
-            
+                <h1 id="top" class="session_heading">Session 2.2 Quick Check</h1>
                 <ol class="question_lists">
                         <li>Provide a selector to match all address elements that are direct children of the
                                 footer element.</li>
@@ -54,6 +54,7 @@
                         <li>Provide a style rule to horizontally center all h1 through h6 headings and to
                                 display their text with normal weight.</li>
                 </ol>
+                <hr />
         
         <h3>Question 1</h3>
         <p>footer > address {color: rgb(0, 0, 255);} </p>
@@ -75,24 +76,24 @@
 
         <h3>Question 6</h3>
         <p>@font-face {
-                <br />font-family: Cantarell;<br />
-                <br />src: url(cantarell.woff) format('woff'),<br />
-                <br class="indent"/>url(cantarell.tff) formal('tff');<br />
+                <p class="indent">font-family: Cantarell;</p>
+                <p class="indent">src: url(cantarell.woff) format('woff'),</p>
+                <p class="indent">url(cantarell.tff) formal('tff');</p>
                 }
         </p>
 
         <h3>Question 7</h3>
         <p>blockquote.Reviews {
-                        <br class="indent" />text-indent: 3em;<br />
-                        <br class="indent" />font-style: italic;<br />
+                        <p class="indent">text-indent: 3em;</p>
+                        <p class="indent">font-style: italic;</p>
                 }
         </p>
         <p><blockquote class="Reviews">Testing blockquotes for italtics and indents.</blockquote></p>
 
         <h3>Question 8</h3>
         <p>h1, h2, h3, h4, h5, h6 {
-                <br class="indent" />text-align: center;<br />
-                <br class="indent" />font-weight: normal;<br />
+                <p class="indent">text-align: center;</p>
+                <p class="indent">font-weight: normal;</p>
                 }
         </p>
 
@@ -102,10 +103,9 @@
                 <address>765 Old Yellow Road <br />Campus City<br /> SR 516766</address>
         </footer>
 
-         <!-- Footer to be added later. Not able to position footer at bottom of page atm.
         <footer class="edu_footer">
 			<h4>This Website is Used Entirely for Educational Purposes.</h4>
         </footer>
-        -->
+        
     </body>
 </html>
